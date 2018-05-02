@@ -20,9 +20,11 @@ var minuteConversion = function(min) {
   } else if (hours === 1) { 
     result += '1 hour';
   } else if (mins > 1) { 
-    result += mins + ' minutes';
+    result += mins + ' minutes'; //I believe the bug is here, for all min values larger than 60 it should return hours and minuntes but does not
   } else if (mins === 1) { 
     result += '1 minute';
   }
   return result;
 };
+
+console.log(minuteConversion(65));
