@@ -29,3 +29,4 @@ var dogs = [
     { name: 'Molly', breed: 'Collie' }
   ];
 console.log(findObject(dogs, 'breed', 'Husky'));
+//this is a console log to test the function
